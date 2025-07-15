@@ -3,7 +3,7 @@ services:
     name: flask-app
     env: python
     buildCommand: ""
-    startCommand: gunicorn app:app --bind 0.0.0.0:10000
+    startCommand: python app.py
     envVars:
       - key: PORT
-        value: 10000
+        value: 5000
